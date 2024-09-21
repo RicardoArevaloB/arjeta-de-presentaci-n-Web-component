@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg,#008985,#008961,#00893B,#008916,#118900);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    max-height: none;
+
+    
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 8px;
+    padding: 8px;
+    width: 60%;
+    border: solid #05385c;
+    border-radius: 10px;
+    background-color: #0062A8;
+}
+
+h3{
+    border-bottom: solid gray;
+    padding: 2%;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.name{
+    padding: 2.3%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(88, 88, 130);
+    font-size: 1.5rem;
+    border: solid #05385c;
+}
+
+
+
+.hobbies{
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: rgb(69, 69, 105);
+    padding: 6%;
+    border: solid #05385c;
+    
+}
+
+.titlehobbit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+
+}
+
+.contenido1{
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: rgb(69, 69, 105);
+    padding: 6%;
+    gap: 10px;
+    border: solid #05385c;
+}
+
+.title1{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
